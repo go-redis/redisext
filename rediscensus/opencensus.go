@@ -1,10 +1,10 @@
-package redisext
+package rediscensus
 
 import (
 	"context"
 
 	"github.com/go-redis/redis/v8"
-	"github.com/go-redis/redisext/internal"
+	"github.com/go-redis/redisext/cmdutil"
 	"go.opencensus.io/trace"
 )
 
@@ -13,13 +13,9 @@ type OpenCensusHook struct{}
 var _ redis.Hook = OpenCensusHook{}
 
 func (OpenCensusHook) BeforeProcess(ctx context.Context, cmd redis.Cmder) (context.Context, error) {
-
-	b := make([]byte, 0, 32)
-	b = appendCmd(b, cmd)
-
 	ctx, span := trace.StartSpan(ctx, cmd.FullName())
 	span.AddAttributes(trace.StringAttribute("db.system", "redis"),
-		trace.StringAttribute("redis.cmd", internal.String(b)))
+		trace.StringAttribute("redis.cmd", cmdutil.CmdString(cmd)))
 
 	return ctx, nil
 }

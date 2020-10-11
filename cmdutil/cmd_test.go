@@ -1,4 +1,4 @@
-package redisext
+package cmdutil
 
 import (
 	"testing"
@@ -13,7 +13,7 @@ func TestGinkgo(t *testing.T) {
 	RunSpecs(t, "redisext")
 }
 
-var _ = Describe("appendArg", func() {
+var _ = Describe("AppendArg", func() {
 	DescribeTable("...",
 		func(src string, wanted string) {
 			b := appendArg(nil, src)
