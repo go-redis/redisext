@@ -14,6 +14,8 @@ github.com/go-redis/redis/v8 v8.3.0 h1:Xrwvn8+QqUYD1MbQmda3cVR2U9li5XbtRFkKZN5Y0
 github.com/go-redis/redis/v8 v8.3.0/go.mod h1:a2xkpBM7NJUN5V5kiF46X5Ltx4WeXJ9757X/ScKUBdE=
 github.com/go-redis/redisext v0.3.0 h1:dZuo0ZkA3Er49Jpxacd/IoMmng/Oo9V/bOJJgKwjp/c=
 github.com/go-redis/redisext v0.3.0/go.mod h1:RsxZvP0ikgPfqLUIJ9MfRTDODm5PCW1UHO9DI9IMumU=
+github.com/go-redis/redisext v0.3.1 h1:Qh6Z8xxjt7F8Aa8BILk9ssW73UcTcXDytvblouBHWCE=
+github.com/go-redis/redisext v0.3.1/go.mod h1:RsxZvP0ikgPfqLUIJ9MfRTDODm5PCW1UHO9DI9IMumU=
 github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b/go.mod h1:SBH7ygxi8pfUlaOkMMuAQtPIUF8ecWP5IEl/CR7VP2Q=
 github.com/golang/groupcache v0.0.0-20190702054246-869f871628b6 h1:ZgQEtGgCBiWRM39fZuwSd1LwSqqSW0hOdXCYYDX0R3I=
 github.com/golang/groupcache v0.0.0-20190702054246-869f871628b6/go.mod h1:cIg4eruTrX1D+g88fzRXU5OdNfaM+9IcxsU14FzY7Hc=
